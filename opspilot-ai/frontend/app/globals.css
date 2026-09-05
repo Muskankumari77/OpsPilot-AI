@@ -1,0 +1,512 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+   OPSPILOT AI — GLOBAL DESIGN SYSTEM
+========================================= */
+
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  --font-display: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* =========================================
+   BASE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  @apply bg-background text-text-primary;
+
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(108, 77, 255, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 95% 5%,
+      rgba(236, 79, 216, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 75% 95%,
+      rgba(34, 199, 232, 0.07),
+      transparent 28%
+    ),
+    #f7f7ff;
+
+  font-family: var(--font-sans);
+}
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+  background: rgba(108, 77, 255, 0.20);
+  color: #11142d;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d5e8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bcb7d4;
+}
+
+/* =========================================
+   GLASS EFFECT
+========================================= */
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.85);
+
+  box-shadow:
+    0 20px 60px rgba(73, 57, 140, 0.08);
+}
+
+/* =========================================
+   GRADIENT TEXT
+========================================= */
+
+.gradient-text {
+  background: linear-gradient(
+    100deg,
+    #5b4bff 0%,
+    #8b5cf6 45%,
+    #ec4fd8 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+/* =========================================
+   GRADIENT BUTTON
+========================================= */
+
+.gradient-button {
+  background: linear-gradient(
+    100deg,
+    #5b4bff 0%,
+    #8b5cf6 50%,
+    #ec4fd8 100%
+  );
+
+  box-shadow:
+    0 12px 30px rgba(108, 77, 255, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.gradient-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 18px 40px rgba(108, 77, 255, 0.30);
+}
+
+/* =========================================
+   SOFT BACKGROUND GRID
+========================================= */
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(
+      rgba(108, 77, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(108, 77, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 32px 32px;
+}
+
+/* =========================================
+   HERO GLOW
+========================================= */
+
+.hero-glow {
+  position: absolute;
+
+  width: 480px;
+  height: 480px;
+
+  border-radius: 999px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(108, 77, 255, 0.20),
+      rgba(236, 79, 216, 0.08),
+      transparent 70%
+    );
+
+  filter: blur(12px);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   FLOATING ANIMATION
+========================================= */
+
+.float-card {
+  animation: floating 5s ease-in-out infinite;
+}
+
+.float-card-delay {
+  animation: floating 5s ease-in-out 1.2s infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* =========================================
+   SOFT PULSE
+========================================= */
+
+.animate-pulse-soft {
+  animation: pulseSoft 3s ease-in-out infinite;
+}
+
+@keyframes pulseSoft {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   CHAT MESSAGE ANIMATION
+========================================= */
+
+.chat-message {
+  animation: chatMessageIn 0.25s ease-out;
+}
+
+@keyframes chatMessageIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dark body {
+  color: #f7f7ff;
+
+  background:
+    radial-gradient(
+      circle at 5% 5%,
+      rgba(108, 77, 255, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 95% 5%,
+      rgba(236, 79, 216, 0.10),
+      transparent 25%
+    ),
+    #0c0b16;
+}
+
+.dark ::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #ffffff;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3a3650;
+}
+
+.dark .glass {
+  background: rgba(21, 19, 35, 0.75);
+
+  border-color: rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* Tailwind utility overrides for dark mode */
+
+.dark .bg-white {
+  background-color: #151323 !important;
+}
+
+.dark .bg-white\/80 {
+  background-color: rgba(21, 19, 35, 0.82) !important;
+}
+
+.dark .bg-white\/70 {
+  background-color: rgba(21, 19, 35, 0.72) !important;
+}
+
+.dark .bg-white\/60 {
+  background-color: rgba(21, 19, 35, 0.62) !important;
+}
+
+.dark .text-text-primary {
+  color: #f7f7ff !important;
+}
+
+.dark .text-text-muted {
+  color: #aaa6bf !important;
+}
+
+.dark .border-border {
+  border-color: #2b2840 !important;
+}
+
+.dark input {
+  color: #f7f7ff;
+}
+
+.dark input::placeholder {
+  color: #77738e;
+}
+
+.dark .dashboard-grid {
+  background-image:
+    linear-gradient(
+      rgba(139, 92, 246, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(139, 92, 246, 0.04) 1px,
+      transparent 1px
+    );
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .hero-glow {
+    width: 300px;
+    height: 300px;
+  }
+}
+/* =========================================
+   DARK MODE — COMPONENT CONTRAST FIX
+========================================= */
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  color: #f8f7ff !important;
+}
+
+/* Main text */
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span {
+  border-color: #2b2840;
+}
+
+/* White surfaces */
+
+.dark .bg-white {
+  background-color: #151323 !important;
+}
+
+.dark .bg-background-surface {
+  background-color: #151323 !important;
+}
+
+.dark .bg-background-card {
+  background-color: #181629 !important;
+}
+
+.dark .bg-background-soft {
+  background-color: #211e35 !important;
+}
+
+/* Text */
+
+.dark .text-text-primary {
+  color: #f8f7ff !important;
+}
+
+.dark .text-text-muted {
+  color: #aaa6bf !important;
+}
+
+.dark .text-text-soft {
+  color: #817c99 !important;
+}
+
+/* Borders */
+
+.dark .border-border {
+  border-color: #302c46 !important;
+}
+
+/* Inputs */
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #151323 !important;
+  color: #f8f7ff !important;
+  border-color: #302c46 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #77728f !important;
+}
+
+/* Cards */
+
+.dark .shadow-soft {
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.30);
+}
+
+/* Chat cards */
+
+.dark .chat-message .bg-white {
+  background-color: #181629 !important;
+  color: #f8f7ff !important;
+}
+
+/* User chat bubble should ALWAYS stay white text */
+
+.dark .chat-message .text-white {
+  color: #ffffff !important;
+}
+
+/* Buttons */
+
+.dark button {
+  color: inherit;
+}
+
+/* Keep gradient buttons readable */
+
+.dark .gradient-button,
+.dark .bg-gradient-to-r {
+  color: #ffffff;
+}
+
+/* Dark glass */
+
+.dark .glass {
+  background: rgba(21, 19, 35, 0.78) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Search box */
+
+.dark input {
+  caret-color: #a78bfa;
+}
+
+/* Suggestions */
+
+.dark .bg-accent-primary\/5 {
+  background-color: rgba(108, 77, 255, 0.12) !important;
+}
+
+.dark .bg-accent-primary\/10 {
+  background-color: rgba(108, 77, 255, 0.16) !important;
+}
+
+/* Smooth theme change */
+
+body,
+button,
+input,
+textarea,
+select,
+header,
+aside,
+main,
+div {
+  transition:
+    background-color 0.20s ease,
+    border-color 0.20s ease,
+    color 0.20s ease;
+}

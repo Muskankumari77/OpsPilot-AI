@@ -1,0 +1,31 @@
+# --- Core API ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+email-validator==2.2.0
+
+# --- Database (SQLite, no server needed) ---
+sqlalchemy==2.0.35
+alembic==1.13.3
+
+# --- Auth ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+
+# --- LLM client (Groq is OpenAI-compatible) ---
+openai==1.51.0
+
+# --- Data / ML (added progressively in later phases, listed now for reference) ---
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+xgboost==2.1.1
+openpyxl==3.1.5
+
+# --- Utilities ---
+python-dotenv==1.0.1
+
+# --- Testing ---
+pytest==8.3.3

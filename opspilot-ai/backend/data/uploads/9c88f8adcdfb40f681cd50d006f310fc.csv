@@ -1,0 +1,101 @@
+sku,name,category,unit_price,unit_cost
+SKU-1001,Wireless Mouse 1,Electronics,89.9,63.66
+SKU-1002,Wireless Mouse 2,Electronics,164.25,102.44
+SKU-1003,Wireless Mouse 3,Electronics,44.45,23.0
+SKU-1004,Wireless Mouse 4,Electronics,24.08,16.56
+SKU-1005,Mechanical Keyboard 1,Electronics,137.03,89.06
+SKU-1006,Mechanical Keyboard 2,Electronics,16.28,11.6
+SKU-1007,Mechanical Keyboard 3,Electronics,185.15,98.31
+SKU-1008,Mechanical Keyboard 4,Electronics,49.82,26.11
+SKU-1009,USB-C Hub 1,Electronics,75.28,45.62
+SKU-1010,USB-C Hub 2,Electronics,101.84,56.0
+SKU-1011,USB-C Hub 3,Electronics,139.27,71.51
+SKU-1012,USB-C Hub 4,Electronics,72.77,41.33
+SKU-1013,Webcam 1,Electronics,106.86,71.43
+SKU-1014,Webcam 2,Electronics,53.53,32.3
+SKU-1015,Webcam 3,Electronics,135.22,66.41
+SKU-1016,Webcam 4,Electronics,138.37,72.08
+SKU-1017,Bluetooth Speaker 1,Electronics,25.53,18.07
+SKU-1018,Bluetooth Speaker 2,Electronics,212.85,143.46
+SKU-1019,Bluetooth Speaker 3,Electronics,75.36,37.94
+SKU-1020,Bluetooth Speaker 4,Electronics,154.32,90.38
+SKU-1021,Laptop Stand 1,Accessories,37.38,22.38
+SKU-1022,Laptop Stand 2,Accessories,19.15,13.37
+SKU-1023,Laptop Stand 3,Accessories,65.83,42.07
+SKU-1024,Laptop Stand 4,Accessories,76.84,46.47
+SKU-1025,Phone Case 1,Accessories,125.72,65.92
+SKU-1026,Phone Case 2,Accessories,213.67,142.31
+SKU-1027,Phone Case 3,Accessories,207.42,144.11
+SKU-1028,Phone Case 4,Accessories,136.36,95.62
+SKU-1029,Desk Mat 1,Accessories,30.41,16.03
+SKU-1030,Desk Mat 2,Accessories,21.41,11.95
+SKU-1031,Desk Mat 3,Accessories,92.84,50.61
+SKU-1032,Desk Mat 4,Accessories,184.38,104.29
+SKU-1033,Cable Organizer 1,Accessories,70.43,42.98
+SKU-1034,Cable Organizer 2,Accessories,41.31,27.78
+SKU-1035,Cable Organizer 3,Accessories,27.51,19.72
+SKU-1036,Cable Organizer 4,Accessories,172.63,91.1
+SKU-1037,Screen Protector 1,Accessories,13.15,8.89
+SKU-1038,Screen Protector 2,Accessories,159.03,104.16
+SKU-1039,Screen Protector 3,Accessories,172.42,85.83
+SKU-1040,Screen Protector 4,Accessories,86.56,43.96
+SKU-1041,Notebook 1,Office,191.53,120.59
+SKU-1042,Notebook 2,Office,80.83,40.03
+SKU-1043,Notebook 3,Office,76.68,42.79
+SKU-1044,Notebook 4,Office,163.76,103.66
+SKU-1045,Gel Pen Set 1,Office,196.54,116.61
+SKU-1046,Gel Pen Set 2,Office,36.88,24.02
+SKU-1047,Gel Pen Set 3,Office,170.24,104.65
+SKU-1048,Gel Pen Set 4,Office,172.36,103.16
+SKU-1049,Desk Lamp 1,Office,120.73,70.34
+SKU-1050,Desk Lamp 2,Office,17.29,8.75
+SKU-1051,Desk Lamp 3,Office,18.54,11.73
+SKU-1052,Desk Lamp 4,Office,77.39,46.59
+SKU-1053,Planner 1,Office,200.77,108.38
+SKU-1054,Planner 2,Office,97.36,64.39
+SKU-1055,Planner 3,Office,59.59,29.7
+SKU-1056,Planner 4,Office,72.27,37.49
+SKU-1057,Document Organizer 1,Office,205.38,138.42
+SKU-1058,Document Organizer 2,Office,143.75,99.07
+SKU-1059,Document Organizer 3,Office,179.16,94.02
+SKU-1060,Document Organizer 4,Office,197.65,120.46
+SKU-1061,LED Bulb Pack 1,Home,179.95,125.08
+SKU-1062,LED Bulb Pack 2,Home,78.14,39.57
+SKU-1063,LED Bulb Pack 3,Home,59.41,34.61
+SKU-1064,LED Bulb Pack 4,Home,182.15,125.06
+SKU-1065,Smart Plug 1,Home,13.45,8.1
+SKU-1066,Smart Plug 2,Home,98.82,52.7
+SKU-1067,Smart Plug 3,Home,36.93,20.72
+SKU-1068,Smart Plug 4,Home,208.13,116.05
+SKU-1069,Storage Box 1,Home,119.91,77.79
+SKU-1070,Storage Box 2,Home,87.63,62.5
+SKU-1071,Storage Box 3,Home,212.19,114.67
+SKU-1072,Storage Box 4,Home,115.43,63.74
+SKU-1073,Air Freshener 1,Home,71.25,34.83
+SKU-1074,Air Freshener 2,Home,138.79,83.36
+SKU-1075,Air Freshener 3,Home,22.71,12.42
+SKU-1076,Air Freshener 4,Home,200.92,107.99
+SKU-1077,Water Bottle 1,Home,42.14,25.18
+SKU-1078,Water Bottle 2,Home,217.02,116.78
+SKU-1079,Water Bottle 3,Home,151.8,100.61
+SKU-1080,Water Bottle 4,Home,61.43,40.22
+SKU-1081,Gaming Headset 1,Gaming,88.5,55.91
+SKU-1082,Gaming Headset 2,Gaming,143.77,87.5
+SKU-1083,Gaming Headset 3,Gaming,30.78,20.94
+SKU-1084,Gaming Headset 4,Gaming,78.72,41.31
+SKU-1085,Game Controller 1,Gaming,20.48,12.73
+SKU-1086,Game Controller 2,Gaming,152.93,74.02
+SKU-1087,Game Controller 3,Gaming,118.52,63.33
+SKU-1088,Game Controller 4,Gaming,146.2,76.29
+SKU-1089,RGB Mouse Pad 1,Gaming,155.72,89.2
+SKU-1090,RGB Mouse Pad 2,Gaming,206.84,106.11
+SKU-1091,RGB Mouse Pad 3,Gaming,82.94,42.07
+SKU-1092,RGB Mouse Pad 4,Gaming,204.34,141.11
+SKU-1093,USB Microphone 1,Gaming,65.65,41.91
+SKU-1094,USB Microphone 2,Gaming,181.98,111.6
+SKU-1095,USB Microphone 3,Gaming,122.17,65.73
+SKU-1096,USB Microphone 4,Gaming,31.37,21.81
+SKU-1097,Gaming Chair Cushion 1,Gaming,199.29,125.94
+SKU-1098,Gaming Chair Cushion 2,Gaming,82.52,46.53
+SKU-1099,Gaming Chair Cushion 3,Gaming,163.0,113.33
+SKU-1100,Gaming Chair Cushion 4,Gaming,196.51,131.11
