@@ -168,7 +168,9 @@ def get_sales_summary(
     region: Optional[str] = None,
     category: Optional[str] = None,
 ) -> SalesSummaryOut:
-    start, end, prev_start, prev_end = resolve_period(date_from, date_to)
+    start, end, prev_start, prev_end = resolve_period(
+    date_from, date_to, default_days=365
+)
 
     current = _filtered_query(db, organization_id, start, end, region, category)
     previous = _filtered_query(db, organization_id, prev_start, prev_end, region, category)
