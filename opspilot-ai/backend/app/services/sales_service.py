@@ -210,7 +210,7 @@ def get_sales_trends(
     category: Optional[str] = None,
     granularity: str = "month",
 ) -> SalesTrendsOut:
-    start, end, _, _ = resolve_period(date_from, date_to, default_days=365)
+    start, end, prev_start, prev_end = resolve_period(date_from, date_to)
     query = _filtered_query(db, organization_id, start, end, region, category)
 
     strftime_pattern = {"day": "%Y-%m-%d", "week": "%Y-W%W", "month": "%Y-%m"}.get(granularity, "%Y-%m")
